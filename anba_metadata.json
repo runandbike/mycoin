@@ -1,0 +1,10 @@
+
+{
+  "name": "ANBA Token", 
+  "symbol": "ANBA",
+  "uri": "https://github.com/runandbike/mycoin/blob/c0c299798b086a17f469212fc7ea54230e62e07d/token_uri",
+  "sellerFeeBasisPoints": 0,
+  "creators": null,
+  "collection": null,
+  "uses": null
+}
