@@ -14,9 +14,9 @@ export function loadWalletKey(keypairFile:string): web3.Keypair {
 const INITIALIZE = false;
 
 async function main(){
-    console.log("let's name some tokens!");
-    const myKeypair = loadWalletKey("xxxx.json");
-    const mint = new web3.PublicKey("AZYuZksJrTL1Q2U9EL72Z4Nk46Kt4EGRc3QxLLAeBgiz");
+    console.log("let's name my token!");
+    const myKeypair = loadWalletKey("/root/.config/solana/id.json");
+    const mint = new web3.PublicKey("E6FYwffaxpk4c2Q2XfJC16XfyxRnKZ8hk2EF2w1iy1FB");
     const seed1 = Buffer.from(anchor.utils.bytes.utf8.encode("metadata"));
     const seed2 = Buffer.from(mpl.PROGRAM_ID.toBytes());
     const seed3 = Buffer.from(mint.toBytes());
@@ -31,7 +31,7 @@ async function main(){
     const dataV2 = {
         name: "ANBA Token",
         symbol: "ANBA",
-        uri: "https://raw.githubusercontent.com/runandbike/mycoin/main/anba_metadata.json",
+        uri: "https://raw.githubusercontent.com/runandbike/mycoin/main/token_uri.json",
         // we don't need that
         sellerFeeBasisPoints: 0,
         creators: null,
