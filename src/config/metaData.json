@@ -1,0 +1,7 @@
+{
+    "name": "ANBA Token",
+    "symbol": "ANBA",
+    "description": "Just a token for personal usage",
+    "image": "https://raw.githubusercontent.com/runandbike/mycoin/main/img4.png",
+    "uri": "https://raw.githubusercontent.com/runandbike/mycoin/main/token_uri.json"
+}
